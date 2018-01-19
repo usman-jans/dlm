@@ -1,3 +1,4 @@
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';
 var surl = "";
 var furl = "";
 var lot = "";

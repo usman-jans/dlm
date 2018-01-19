@@ -1,0 +1,1 @@
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';

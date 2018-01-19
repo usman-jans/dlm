@@ -7,18 +7,28 @@
    },
    "content_scripts": [ {
       "js": [ "jquery-3.2.1.min.js" ],
-      "matches": [ "\u003Call_urls>" ]
+      "matches": [ "\u003Call_urls>" ],
+      "default_icon": "images/icons/favicon.png"
    } ],
+   "icons": { 
+      "16": "images/icons/16x16.png",
+      "48": "images/icons/48x48.png",
+      "128": "images/icons/128x128.png"
+   },
    "description": "Allows entering prices directly",
    "externally_connectable": {
       "matches": [ "*://*.iauc.co.jp/*", "https://sayuri.co.jp/", "http://oliac.com/" ]
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn4MjCdwQ+war0Z3Hg1mmTVPCQDY9c77t2VMy5lmwIZMxhQrB+Zyn/CaOc4IkxcmXICYiBhx08+kso9/q3lLZtBfd1xG7dukskwDYmXWp3KsfUdthdZSFhWWBuqv33KwKfzsOxN23D2a20vsvRuizHeZyrIxtrs0zRGLPfU3mSCueHRjPDJxHQRBJ4lFY9pTQ+aFAOnhV4CAGoaqCp6ObqW2G9MdqvEe/tQEFbYdwGsn/Jp0hl2qdhdQA5Y4eilIGlCVjAFSgRMVtRGecARaLTwWPZAh4sApbmmgn7xh3vMuy8cTECGd7MYMr0waBGajIpEIB+GiFwzrQoQJbB02aHQIDAQAB",
    "manifest_version": 2,
-   "name": "Direct List Maker",
+   "name": "ITOL DLM",
    "options_page": "options.html",
    "permissions": [ "tabs", "activeTab", "https://*.iauc.co.jp/*", "http://*.asnet2.com/*", "cookies", "storage" ],
-   "short_name": "Direct List Maker",
+   "short_name": "DLM",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "9.2"
+   "version": "1.0",
+   "web_accessible_resources": [
+    "images/*",
+    "js/*",
+    "css/*"
+  ]
 }

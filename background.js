@@ -1,5 +1,5 @@
 var tabid;
-
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';
 chrome.browserAction.onClicked.addListener(function(tab) {
    chrome.tabs.executeScript(null, {file: "content.js"});
 

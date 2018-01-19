@@ -1,4 +1,4 @@
-
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';
 document.addEventListener('DOMContentLoaded', function() {
 	var link = document.getElementById('atml');
     // onClick's logic below:

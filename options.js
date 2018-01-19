@@ -1,4 +1,5 @@
 var options = new Object;
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';
 $("#chbox")[0].checked = true;
 
 options.autostart = "yes";

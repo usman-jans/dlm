@@ -1,4 +1,4 @@
-
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {

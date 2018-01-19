@@ -9,8 +9,10 @@ var info;
 var pageUrl = window.location;
 var currentPage;
 
-//var mainurl = 'https://inventivesolutionste.ipage.com/javascripts/cdd/iaucdatatest.js';
-var mainurl = 'https://inventivesolutionste.ipage.com/javascripts/cdd/carpageopen2.js';
+
+var resource_url = 'https://jjinventorysystem.com/devtest/dlm_lmt/';
+//var mainurl = resource_url+'javascripts/cdd/iaucdatatest.js';
+var mainurl = resource_url+'javascripts/cdd/carpageopen2.js';
 //
 
 
@@ -58,7 +60,7 @@ function precheck()
 			pageScriptS = window.document.createElement('script');
 			pageScriptS.type = 'text/javascript';
 			pageScriptS.async = true;
-			pageScriptS.src = 'https://inventivesolutionste.ipage.com/javascripts/cdd/asnetdirectsystem.js';
+			pageScriptS.src = resource_url+'javascripts/cdd/asnetdirectsystem.js';
 			document.getElementsByTagName('head')[0].appendChild(pageScriptS);
 			
 
@@ -68,7 +70,7 @@ function precheck()
 			pageScriptS = window.document.createElement('script');
 			pageScriptS.type = 'text/javascript';
 			pageScriptS.async = true;
-			pageScriptS.src = 'https://inventivesolutionste.ipage.com/javascripts/cdd/abtrading.js';
+			pageScriptS.src = resource_url+'javascripts/cdd/abtrading.js';
 			document.getElementsByTagName('head')[0].appendChild(pageScriptS);
 		}
 		else if (pageUrl.href.match(/preint/g)!=null)
@@ -76,7 +78,7 @@ function precheck()
 			pageScriptS = window.document.createElement('script');
 			pageScriptS.type = 'text/javascript';
 			pageScriptS.async = true;
-			pageScriptS.src = 'https://inventivesolutionste.ipage.com/javascripts/cdd/asnetdirect.js';
+			pageScriptS.src = resource_url+'javascripts/cdd/asnetdirect.js';
 			document.getElementsByTagName('head')[0].appendChild(pageScriptS);
 		}
 		else if(window.location.href.indexOf("vehicle/search")>=0 && window.location.href.indexOf("exhibit")>=0)
@@ -85,7 +87,7 @@ function precheck()
 			pageScriptS = window.document.createElement('script');
 			pageScriptS.type = 'text/javascript';
 			pageScriptS.async = true;
-			pageScriptS.src = 'https://inventivesolutionste.ipage.com/javascripts/cdd/advanced_scraper.js';
+			pageScriptS.src = resource_url+'javascripts/cdd/advanced_scraper.js';
 			document.getElementsByTagName('head')[0].appendChild(pageScriptS);
 		}
 	else{
@@ -142,7 +144,7 @@ document.head.appendChild(st);
 				
 	
 	
-//console.log("executed " + $("script[src='https://inventivesolutionste.ipage.com/javascripts/cdd/carpageopen.js']").length);	
+//console.log("executed " + $("script[src='"+resource_url+"javascripts/cdd/carpageopen.js']").length);	
 
 			
 		
@@ -162,7 +164,7 @@ document.head.appendChild(st);
 			pageScriptS.setAttribute('defer', '');
 			pageScriptS.setAttribute('onload', 'this.onload=function(){refreshCode()};');
 			pageScriptS.setAttribute('onreadystatechange', 'if (this.readyState === "complete") this.onload()');
-			pageScriptS.src = 'https://inventivesolutionste.ipage.com/javascripts/cdd/codestarter.js';
+			pageScriptS.src = resource_url+'javascripts/cdd/codestarter.js';
 			document.getElementsByTagName('body')[0].appendChild(pageScriptS);
 			console.log("script starter added");
 		}
